@@ -1,0 +1,14 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "log2",
+    srcs = ["log2.go"],
+    importpath = "myrepo/testlib/log2",
+    visibility = ["//visibility:public"],
+)
+
+alias(
+    name = "go_default_library",
+    actual = ":log2",
+    visibility = ["//visibility:public"],
+)

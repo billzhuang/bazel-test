@@ -1,0 +1,5 @@
+.DS_Store
+.idea
+
+# bazel build files
+**/bazel-*
